@@ -4,7 +4,8 @@
 
 **让 C 盘重新呼吸的 Windows 清理工具 · 永远免费**
 
-[![Free](https://img.shields.io/badge/价格-永远免费-brightgreen?style=for-the-badge)](https://github.com/jy0529/c-care-free)
+[![Free](https://img.shields.io/badge/价格-永远免费-brightgreen?style=for-the-badge)](https://jy0529.github.io/c-care-free/)
+[![Website](https://img.shields.io/badge/官网-立即下载-1c375a?style=for-the-badge)](https://jy0529.github.io/c-care-free/)
 [![.NET 8](https://img.shields.io/badge/.NET-8.0-512BD4?logo=dotnet&logoColor=white)](https://dotnet.microsoft.com/)
 [![Platform](https://img.shields.io/badge/Platform-Windows-0078D6?logo=windows&logoColor=white)](https://github.com/jy0529/c-care-free)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
@@ -83,7 +84,9 @@ C盘无忧 帮你做三件事：
 
 ## 📥 下载安装
 
-前往 [Releases](https://github.com/jy0529/c-care-free/releases) 下载最新版：
+**官网（Landing Page）：** [https://jy0529.github.io/c-care-free/](https://jy0529.github.io/c-care-free/)
+
+前往 [Releases](https://github.com/jy0529/c-care-free/releases) 或直接下载最新版：
 
 | 文件 | 说明 |
 |------|------|

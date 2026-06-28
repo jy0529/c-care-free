@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jy0529.github.io/c-care-free/sitemap.xml
