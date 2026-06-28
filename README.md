@@ -11,7 +11,7 @@
 
 一键看清 C 盘空间 · 安全清理垃圾缓存 · 智能发现大文件并给出搬家建议
 
-[快速开始](#-快速开始) · [功能亮点](#-功能亮点) · [截图](#-界面预览) · [文档](#-文档)
+[快速开始](#-快速开始) · [下载安装](#-下载安装) · [功能亮点](#-功能亮点) · [文档](#-文档)
 
 </div>
 
@@ -72,7 +72,22 @@ C盘无忧 帮你做三件事：
 
 ---
 
-## 🚀 快速开始
+## 📥 下载安装
+
+前往 [Releases](https://github.com/jy0529/c-care-free/releases) 下载最新版：
+
+| 文件 | 说明 |
+|------|------|
+| `CCareFree-v1.0.0-win-x64.zip` | Windows 64 位，解压即用，**无需安装 .NET** |
+
+使用步骤：
+1. 下载并解压 zip
+2. 双击 `CCareFree.exe`
+3. 左侧选择功能，点击扫描
+
+---
+
+## 🚀 快速开始（开发者）
 
 ### 环境要求
 
@@ -92,6 +107,14 @@ cd c-care-free
 dotnet restore CDriveCleanupMaster.sln
 dotnet run --project src/CDriveCleanupMaster.App/CDriveCleanupMaster.App.csproj
 ```
+
+### 发布 exe
+
+```powershell
+.\publish.ps1
+```
+
+输出：`dist/CCareFree-v1.0.0-win-x64.zip`（含 `CCareFree.exe` 与清理规则配置）
 
 ### 构建与测试
 

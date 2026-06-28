@@ -1,6 +1,14 @@
 # C盘无忧 v1.0.0
 
-首个正式版本发布。
+首个正式版本，提供 **Windows x64 免安装单文件可执行程序**。
+
+## 下载
+
+| 文件 | 说明 |
+|------|------|
+| `CCareFree-v1.0.0-win-x64.zip` | 解压后运行 `CCareFree.exe`（内含清理规则配置） |
+
+> 自包含发布，**无需单独安装 .NET 运行时**。
 
 ## 亮点
 
@@ -9,19 +17,22 @@
 - 大文件搬家：多线程 Top-N 扫描、实时预览、智能搬家建议
 - 原生 WPF 界面，浅色 Dashboard 设计
 
-## 环境要求
+## 系统要求
 
-- Windows 10/11 x64
-- .NET 8 Runtime（从源码运行需 SDK）
+- Windows 10 / 11（64 位）
 
-## 快速开始
+## 使用方式
+
+1. 下载并解压 `CCareFree-v1.0.0-win-x64.zip`
+2. 双击 `CCareFree.exe` 运行
+3. 左侧选择「垃圾清理」或「大文件搬家」，点击扫描
+
+## 从源码构建
 
 ```powershell
 git clone git@github.com:jy0529/c-care-free.git
 cd c-care-free
-.\run.ps1
+.\publish.ps1
 ```
 
-## 完整变更
-
-详见 [README](https://github.com/jy0529/c-care-free#readme) 与 [文档](https://github.com/jy0529/c-care-free/tree/main/docs)。
+输出位于 `dist/CCareFree-v1.0.0-win-x64.zip`。
