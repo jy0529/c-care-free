@@ -2,14 +2,17 @@
 
 # C盘无忧
 
-**让 C 盘重新呼吸的 Windows 清理工具**
+**让 C 盘重新呼吸的 Windows 清理工具 · 永远免费**
 
+[![Free](https://img.shields.io/badge/价格-永远免费-brightgreen?style=for-the-badge)](https://github.com/jy0529/c-care-free)
 [![.NET 8](https://img.shields.io/badge/.NET-8.0-512BD4?logo=dotnet&logoColor=white)](https://dotnet.microsoft.com/)
 [![Platform](https://img.shields.io/badge/Platform-Windows-0078D6?logo=windows&logoColor=white)](https://github.com/jy0529/c-care-free)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Release](https://img.shields.io/github/v/release/jy0529/c-care-free?label=Release)](https://github.com/jy0529/c-care-free/releases)
 
-一键看清 C 盘空间 · 安全清理垃圾缓存 · 智能发现大文件并给出搬家建议
+一键看清 C 盘空间 · 安全清理垃圾缓存 · 识别程序员开发缓存 · 大文件智能搬家
+
+> **无广告 · 无内购 · 无订阅 · 无功能阉割** — 全部能力永久免费开放。
 
 [快速开始](#-快速开始) · [下载安装](#-下载安装) · [功能亮点](#-功能亮点) · [文档](#-文档)
 
@@ -28,6 +31,8 @@ C盘无忧 帮你做三件事：
 | 📊 | **即时磁盘概览** | 打开即显示 C 盘总容量、已用、可用，不用等扫描 |
 | 🧹 | **白名单垃圾清理** | 系统临时文件、浏览器缓存、更新残留等分类展示，勾选即清 |
 | 📦 | **大文件智能搬家** | 多线程扫描 Top 大文件，Docker/WSL/休眠文件等自动给出搬家建议 |
+| 💻 | **程序员缓存识别** | npm / Yarn / pnpm / Go / Maven / Gradle / NuGet / Cargo / pip / Composer 等开发缓存，扫描可见、可选清理 |
+| 🆓 | **永远免费** | 全功能永久免费，MIT 开源，无广告无订阅 |
 
 > 不扫全盘乱删，不碰未知路径。所有清理项来自可配置白名单，中高风险默认不勾选。
 
@@ -38,7 +43,11 @@ C盘无忧 帮你做三件事：
 ### 垃圾清理
 - 启动即读 C 盘空间，顶栏实时展示
 - 20+ 清理分类：临时文件、缩略图、Shader 缓存、浏览器缓存、Windows 更新缓存、回收站等
-- 开发环境缓存（npm / Maven / NuGet 等）可选清理，默认关闭
+- **程序员友好**：自动识别并分类展示以下开发环境缓存（默认不勾选，按需清理）：
+  - **Node.js**：npm / Yarn / pnpm 缓存
+  - **Java**：Maven 本地仓库、Gradle 缓存
+  - **.NET**：NuGet 包缓存
+  - **其他**：Go module 缓存、Rust Cargo registry、Python pip 缓存、PHP Composer 缓存
 - 按风险分级，清理前二次确认
 
 ### 大文件搬家
@@ -171,16 +180,19 @@ dotnet test CDriveCleanupMaster.sln -c Release
 
 ---
 
-## 📄 许可证
+## 📄 许可证与承诺
 
-本项目基于 [MIT License](LICENSE) 开源。
+本项目基于 [MIT License](LICENSE) 开源，**永远免费**使用。
+
+- 不收费、不弹广告、不锁功能
+- 欢迎 Star、Fork、提 Issue，也欢迎贡献代码
 
 ---
 
 <div align="center">
 
-**C盘无忧** — 空间焦虑，一扫而空。
+**C盘无忧** — 空间焦虑，一扫而空。**永远免费。**
 
-Made with ❤️ for Windows users
+Made with ❤️ for Windows & 程序员
 
 </div>
