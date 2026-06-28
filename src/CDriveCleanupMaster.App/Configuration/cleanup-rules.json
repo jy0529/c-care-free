@@ -1,0 +1,334 @@
+[
+  {
+    "id": "user-temp",
+    "displayName": "用户临时文件",
+    "description": "清理 %TEMP% 与用户 AppData 临时目录。",
+    "groupName": "系统安全清理",
+    "iconKey": "Temp",
+    "riskLevel": "Low",
+    "isExecutable": true,
+    "isSelectedByDefault": true,
+    "paths": [
+      "%TEMP%",
+      "%LOCALAPPDATA%\\Temp"
+    ]
+  },
+  {
+    "id": "system-temp",
+    "displayName": "系统临时文件",
+    "description": "清理 Windows\\Temp（部分文件可能需要管理员权限）。",
+    "groupName": "系统安全清理",
+    "iconKey": "Temp",
+    "riskLevel": "Low",
+    "isExecutable": true,
+    "isSelectedByDefault": false,
+    "paths": [
+      "%WINDIR%\\Temp"
+    ]
+  },
+  {
+    "id": "windows-logs-cbs",
+    "displayName": "Windows CBS 日志",
+    "description": "清理组件基于服务（CBS）日志，可释放一定空间。",
+    "groupName": "系统安全清理",
+    "iconKey": "Log",
+    "riskLevel": "Low",
+    "isExecutable": true,
+    "isSelectedByDefault": false,
+    "paths": [
+      "%WINDIR%\\Logs\\CBS"
+    ]
+  },
+  {
+    "id": "windows-logs-dism",
+    "displayName": "Windows DISM 日志",
+    "description": "清理部署映像服务和管理（DISM）日志。",
+    "groupName": "系统安全清理",
+    "iconKey": "Log",
+    "riskLevel": "Low",
+    "isExecutable": true,
+    "isSelectedByDefault": false,
+    "paths": [
+      "%WINDIR%\\Logs\\DISM"
+    ]
+  },
+  {
+    "id": "crash-minidump",
+    "displayName": "崩溃小型转储",
+    "description": "清理 Windows\\Minidump 下的崩溃转储文件。",
+    "groupName": "系统安全清理",
+    "iconKey": "Dump",
+    "riskLevel": "Low",
+    "isExecutable": true,
+    "isSelectedByDefault": false,
+    "paths": [
+      "%WINDIR%\\Minidump"
+    ]
+  },
+  {
+    "id": "crash-memory-dmp",
+    "displayName": "内存转储 MEMORY.DMP",
+    "description": "删除系统根目录下的 MEMORY.DMP（若存在）。",
+    "groupName": "系统安全清理",
+    "iconKey": "Dump",
+    "riskLevel": "Low",
+    "isExecutable": true,
+    "isSelectedByDefault": false,
+    "paths": [
+      "%WINDIR%\\MEMORY.DMP"
+    ]
+  },
+  {
+    "id": "thumbnail-cache",
+    "displayName": "缩略图缓存",
+    "description": "清理资源管理器缩略图与图标缓存（下次浏览会重建）。",
+    "groupName": "系统安全清理",
+    "iconKey": "Temp",
+    "riskLevel": "Low",
+    "isExecutable": true,
+    "isSelectedByDefault": false,
+    "paths": [
+      "%LOCALAPPDATA%\\Microsoft\\Windows\\Explorer"
+    ]
+  },
+  {
+    "id": "directx-shader-cache",
+    "displayName": "DirectX Shader 缓存",
+    "description": "清理 DirectX 着色器缓存，游戏运行时会自动重建。",
+    "groupName": "可选清理",
+    "iconKey": "Shader",
+    "riskLevel": "Low",
+    "isExecutable": true,
+    "isSelectedByDefault": false,
+    "paths": [
+      "%LOCALAPPDATA%\\D3DSCache"
+    ]
+  },
+  {
+    "id": "nvidia-shader-cache",
+    "displayName": "NVIDIA Shader 缓存",
+    "description": "清理 NVIDIA DX/GL 着色器缓存。",
+    "groupName": "可选清理",
+    "iconKey": "Shader",
+    "riskLevel": "Low",
+    "isExecutable": true,
+    "isSelectedByDefault": false,
+    "paths": [
+      "%LOCALAPPDATA%\\NVIDIA\\DXCache",
+      "%LOCALAPPDATA%\\NVIDIA\\GLCache"
+    ]
+  },
+  {
+    "id": "amd-shader-cache",
+    "displayName": "AMD Shader 缓存",
+    "description": "清理 AMD 着色器缓存目录。",
+    "groupName": "可选清理",
+    "iconKey": "Shader",
+    "riskLevel": "Low",
+    "isExecutable": true,
+    "isSelectedByDefault": false,
+    "paths": [
+      "%LOCALAPPDATA%\\AMD\\DxCache",
+      "%LOCALAPPDATA%\\AMD\\DxcCache"
+    ]
+  },
+  {
+    "id": "chrome-cache",
+    "displayName": "Chrome 缓存",
+    "description": "清理 Google Chrome 缓存（建议关闭浏览器后执行）。",
+    "groupName": "浏览器缓存",
+    "iconKey": "Browser",
+    "riskLevel": "Low",
+    "isExecutable": true,
+    "isSelectedByDefault": false,
+    "paths": [
+      "%LOCALAPPDATA%\\Google\\Chrome\\User Data\\Default\\Cache",
+      "%LOCALAPPDATA%\\Google\\Chrome\\User Data\\Default\\Code Cache"
+    ]
+  },
+  {
+    "id": "edge-cache",
+    "displayName": "Edge 缓存",
+    "description": "清理 Microsoft Edge 缓存（建议关闭浏览器后执行）。",
+    "groupName": "浏览器缓存",
+    "iconKey": "Browser",
+    "riskLevel": "Low",
+    "isExecutable": true,
+    "isSelectedByDefault": false,
+    "paths": [
+      "%LOCALAPPDATA%\\Microsoft\\Edge\\User Data\\Default\\Cache",
+      "%LOCALAPPDATA%\\Microsoft\\Edge\\User Data\\Default\\Code Cache"
+    ]
+  },
+  {
+    "id": "windows-update-cache",
+    "displayName": "Windows 更新缓存",
+    "description": "清理 SoftwareDistribution\\Download（可能需要管理员权限，建议暂停更新后执行）。",
+    "groupName": "可选清理",
+    "iconKey": "Update",
+    "riskLevel": "Medium",
+    "isExecutable": true,
+    "isSelectedByDefault": false,
+    "paths": [
+      "%WINDIR%\\SoftwareDistribution\\Download"
+    ]
+  },
+  {
+    "id": "recycle-bin",
+    "displayName": "回收站",
+    "description": "清空 C 盘回收站中的已删除文件。",
+    "groupName": "系统安全清理",
+    "iconKey": "Recycle",
+    "riskLevel": "Low",
+    "isExecutable": true,
+    "isSelectedByDefault": false,
+    "paths": [
+      "%SYSTEMDRIVE%\\$Recycle.Bin"
+    ]
+  },
+  {
+    "id": "npm-cache",
+    "displayName": "npm 缓存",
+    "description": "清理 npm 包缓存，下次安装会重新下载。",
+    "groupName": "开发环境",
+    "iconKey": "Code",
+    "riskLevel": "Low",
+    "isExecutable": true,
+    "isSelectedByDefault": false,
+    "paths": [
+      "%LOCALAPPDATA%\\npm-cache",
+      "%APPDATA%\\npm-cache"
+    ]
+  },
+  {
+    "id": "yarn-cache",
+    "displayName": "Yarn 缓存",
+    "description": "清理 Yarn 全局缓存目录。",
+    "groupName": "开发环境",
+    "iconKey": "Code",
+    "riskLevel": "Low",
+    "isExecutable": true,
+    "isSelectedByDefault": false,
+    "paths": [
+      "%LOCALAPPDATA%\\Yarn\\Cache"
+    ]
+  },
+  {
+    "id": "pnpm-store",
+    "displayName": "pnpm 存储",
+    "description": "清理 pnpm 本地 store，下次安装会重新拉取依赖。",
+    "groupName": "开发环境",
+    "iconKey": "Code",
+    "riskLevel": "Low",
+    "isExecutable": true,
+    "isSelectedByDefault": false,
+    "paths": [
+      "%LOCALAPPDATA%\\pnpm\\store"
+    ]
+  },
+  {
+    "id": "go-build-cache",
+    "displayName": "Go 构建缓存",
+    "description": "清理 Go 编译构建缓存（go-build）。",
+    "groupName": "开发环境",
+    "iconKey": "Code",
+    "riskLevel": "Low",
+    "isExecutable": true,
+    "isSelectedByDefault": false,
+    "paths": [
+      "%LOCALAPPDATA%\\go-build"
+    ]
+  },
+  {
+    "id": "maven-repository",
+    "displayName": "Maven 本地仓库",
+    "description": "删除 ~/.m2/repository，下次构建会重新下载依赖（耗时较长）。",
+    "groupName": "开发环境",
+    "iconKey": "Code",
+    "riskLevel": "Medium",
+    "isExecutable": true,
+    "isSelectedByDefault": false,
+    "paths": [
+      "%USERPROFILE%\\.m2\\repository"
+    ]
+  },
+  {
+    "id": "gradle-caches",
+    "displayName": "Gradle 缓存",
+    "description": "清理 Gradle caches 目录，不影响项目源码。",
+    "groupName": "开发环境",
+    "iconKey": "Code",
+    "riskLevel": "Low",
+    "isExecutable": true,
+    "isSelectedByDefault": false,
+    "paths": [
+      "%USERPROFILE%\\.gradle\\caches"
+    ]
+  },
+  {
+    "id": "cargo-cache",
+    "displayName": "Cargo 缓存",
+    "description": "清理 Rust Cargo registry/git 缓存。",
+    "groupName": "开发环境",
+    "iconKey": "Code",
+    "riskLevel": "Low",
+    "isExecutable": true,
+    "isSelectedByDefault": false,
+    "paths": [
+      "%USERPROFILE%\\.cargo\\registry\\cache",
+      "%USERPROFILE%\\.cargo\\git\\db"
+    ]
+  },
+  {
+    "id": "composer-cache",
+    "displayName": "Composer 缓存",
+    "description": "清理 PHP Composer 本地包缓存。",
+    "groupName": "开发环境",
+    "iconKey": "Code",
+    "riskLevel": "Low",
+    "isExecutable": true,
+    "isSelectedByDefault": false,
+    "paths": [
+      "%LOCALAPPDATA%\\Composer\\files"
+    ]
+  },
+  {
+    "id": "pip-cache",
+    "displayName": "pip 缓存",
+    "description": "清理 Python pip 下载缓存。",
+    "groupName": "开发环境",
+    "iconKey": "Code",
+    "riskLevel": "Low",
+    "isExecutable": true,
+    "isSelectedByDefault": false,
+    "paths": [
+      "%LOCALAPPDATA%\\pip\\Cache"
+    ]
+  },
+  {
+    "id": "dotnet-nuget",
+    "displayName": ".NET NuGet 包",
+    "description": "删除全局 NuGet 包缓存，下次还原会重新下载。",
+    "groupName": "开发环境",
+    "iconKey": "Code",
+    "riskLevel": "Medium",
+    "isExecutable": true,
+    "isSelectedByDefault": false,
+    "paths": [
+      "%USERPROFILE%\\.nuget\\packages"
+    ]
+  },
+  {
+    "id": "downloads-review",
+    "displayName": "下载目录检查项",
+    "description": "展示下载目录占用，仅查看不自动删除。",
+    "groupName": "人工复核",
+    "iconKey": "Download",
+    "riskLevel": "Medium",
+    "isExecutable": false,
+    "isSelectedByDefault": false,
+    "paths": [
+      "%USERPROFILE%\\Downloads"
+    ]
+  }
+]
