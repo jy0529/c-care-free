@@ -1,6 +1,7 @@
 Set-StrictMode -Version Latest
 $ErrorActionPreference = "Stop"
 
+$repo = "jy0529/c-care-free"
 $projectRoot = Split-Path -Parent $MyInvocation.MyCommand.Path
 $version = "1.0.0"
 $tag = "v$version"
@@ -18,16 +19,17 @@ if (-not $gh) {
 
 gh auth status | Out-Null
 
-$releaseExists = gh release view $tag 2>$null
+$releaseExists = gh release view $tag --repo $repo 2>$null
 if ($LASTEXITCODE -eq 0) {
     Write-Host "Uploading asset to existing release $tag..."
-    gh release upload $tag $zipPath --clobber
+    gh release upload $tag $zipPath --repo $repo --clobber
 }
 else {
     Write-Host "Creating release $tag with asset..."
     gh release create $tag $zipPath `
+        --repo $repo `
         --title "C盘无忧 $tag" `
         --notes-file $notesPath
 }
 
-Write-Host "Done: https://github.com/jy0529/c-care-free/releases/tag/$tag"
+Write-Host "Done: https://github.com/$repo/releases/tag/$tag"
